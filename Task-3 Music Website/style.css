@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282828;
+}
+
+.music-player {
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #444;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #f39c12;
+}
+
+.progress-container {
+    background-color: #555;
+    height: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.progress-bar {
+    background-color: #f39c12;
+    height: 8px;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.time {
+    font-size: 0.9rem;
+}

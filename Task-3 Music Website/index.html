@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <h2 id="song-title">Select a Song</h2>
+        <audio id="audio" src=""></audio>
+        
+        <div class="controls">
+            <button id="prev" onclick="prevSong()">⏮️</button>
+            <button id="play" onclick="playPause()">▶️</button>
+            <button id="next" onclick="nextSong()">⏭️</button>
+        </div>
+
+        <div class="progress-container" onclick="setProgress(event)">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="time">
+            <span id="current-time">0:00</span> / 
+            <span id="total-time">0:00</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
